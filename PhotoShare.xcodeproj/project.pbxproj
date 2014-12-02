@@ -1,0 +1,940 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		277052E11A19B88A008A0ED4 /* libBitcasaSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 277052DA1A19B870008A0ED4 /* libBitcasaSDK.a */; };
+		277052E31A19B892008A0ED4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277052E21A19B892008A0ED4 /* MobileCoreServices.framework */; };
+		8443EAB619F8D3CA00BC73BB /* BCPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8443EAB519F8D3CA00BC73BB /* BCPlistReader.m */; };
+		849D9C4A19F7C41700BE600A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D9C4919F7C41700BE600A /* main.m */; };
+		849D9C4D19F7C41700BE600A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D9C4C19F7C41700BE600A /* AppDelegate.m */; };
+		849D9C6419F7C41800BE600A /* PhotoShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D9C6319F7C41800BE600A /* PhotoShareTests.m */; };
+		84C6572F1A1B2A1C00EF290B /* BCSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C6572D1A1B2A1C00EF290B /* BCSignUpViewController.m */; };
+		84C657361A1B2A3E00EF290B /* BCSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C657351A1B2A3E00EF290B /* BCSignUpViewController.xib */; };
+		84D0E2ED19F8DD3B00A8DC7A /* BCFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D0E2E819F8DD3B00A8DC7A /* BCFriendsViewController.xib */; };
+		84D0E2EE19F8DD3B00A8DC7A /* BCHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D0E2E919F8DD3B00A8DC7A /* BCHistoryViewController.xib */; };
+		84D0E2EF19F8DD3B00A8DC7A /* BCHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D0E2EA19F8DD3B00A8DC7A /* BCHomeViewController.xib */; };
+		84D0E2F019F8DD3B00A8DC7A /* BCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D0E2EB19F8DD3B00A8DC7A /* BCLoginViewController.xib */; };
+		84D0E2FC19F8DD4F00A8DC7A /* BCFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D0E2F419F8DD4F00A8DC7A /* BCFriendsViewController.m */; };
+		84D0E2FD19F8DD4F00A8DC7A /* BCHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D0E2F619F8DD4F00A8DC7A /* BCHistoryViewController.m */; };
+		84D0E2FE19F8DD4F00A8DC7A /* BCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D0E2F819F8DD4F00A8DC7A /* BCHomeViewController.m */; };
+		84D0E2FF19F8DD4F00A8DC7A /* BCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D0E2FA19F8DD4F00A8DC7A /* BCLoginViewController.m */; };
+		84D23F8C1A09FF2D00964DB9 /* BCFriendCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D23F811A09FF2D00964DB9 /* BCFriendCustomCell.m */; };
+		84D23F8D1A09FF2D00964DB9 /* BCMyPhotoCustomFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D23F831A09FF2D00964DB9 /* BCMyPhotoCustomFooterView.m */; };
+		84D23F8E1A09FF2D00964DB9 /* BCMyPhotoCustomHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D23F851A09FF2D00964DB9 /* BCMyPhotoCustomHeaderView.m */; };
+		84D23F8F1A09FF2D00964DB9 /* BCTimeLineCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D23F871A09FF2D00964DB9 /* BCTimeLineCustomCell.m */; };
+		84D23F901A09FF2D00964DB9 /* BCTimeLineCustomFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D23F891A09FF2D00964DB9 /* BCTimeLineCustomFooterView.m */; };
+		84D23F911A09FF2D00964DB9 /* BCTimeLineCustomHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D23F8B1A09FF2D00964DB9 /* BCTimeLineCustomHeaderView.m */; };
+		84EE7C4819FF6D55005B570F /* photoShare.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EE7C4719FF6D55005B570F /* photoShare.xcassets */; };
+		F38C33711A096A65004E29DA /* BCFileTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C33701A096A65004E29DA /* BCFileTransfer.m */; };
+		F38C33761A096AA1004E29DA /* BCFileTransferService.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C33751A096AA1004E29DA /* BCFileTransferService.m */; };
+		F3EBCEA719FED018006618DE /* BCPhotoPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EBCEA419FED018006618DE /* BCPhotoPresentViewController.m */; };
+		F3EBCEA819FED018006618DE /* BCTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EBCEA619FED018006618DE /* BCTabBarViewController.m */; };
+		F3EBCEB019FED612006618DE /* BitcasaConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3EBCEAF19FED612006618DE /* BitcasaConfig.plist */; };
+		F3EBCEB319FF6542006618DE /* BCUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EBCEB219FF6542006618DE /* BCUserService.m */; };
+		F3EBCEB91A00ECBE006618DE /* BCPSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EBCEB81A00ECBE006618DE /* BCPSUser.m */; };
+		F3EBCEC81A055ADE006618DE /* BCCredentialsService.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EBCEC71A055ADE006618DE /* BCCredentialsService.m */; };
+		F3EBCECC1A069E03006618DE /* BCFolderService.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EBCECB1A069E03006618DE /* BCFolderService.m */; };
+		F3EBCED21A06C582006618DE /* BCPSFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EBCED11A06C582006618DE /* BCPSFolder.m */; };
+		F3F7D6B319F93F6200E8E02C /* BCPhotoShareService.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F7D6B219F93F6200E8E02C /* BCPhotoShareService.m */; };
+		F3F7D6B619F9405200E8E02C /* BCPSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F7D6B519F9405200E8E02C /* BCPSPhoto.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		277052D91A19B870008A0ED4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277052BB1A19B870008A0ED4 /* BitcasaSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 77BEB33119A68F5C00D4BE80;
+			remoteInfo = BitcasaSDK;
+		};
+		277052DD1A19B870008A0ED4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277052D01A19B870008A0ED4 /* ShareFile.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 77062E8019E5F42700186334;
+			remoteInfo = ShareFile;
+		};
+		277052DF1A19B870008A0ED4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277052D01A19B870008A0ED4 /* ShareFile.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 77062E9919E5F42700186334;
+			remoteInfo = ShareFileTests;
+		};
+		849D9C5E19F7C41800BE600A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849D9C3A19F7C2FB00BE600A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849D9C4319F7C41700BE600A;
+			remoteInfo = PhotoShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		277052901A19B870008A0ED4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		277052921A19B870008A0ED4 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		277052931A19B870008A0ED4 /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		277052941A19B870008A0ED4 /* Audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
+		277052951A19B870008A0ED4 /* Audio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audio.m; sourceTree = "<group>"; };
+		277052961A19B870008A0ED4 /* BCAssetStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCAssetStream.h; sourceTree = "<group>"; };
+		277052971A19B870008A0ED4 /* BCAssetStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCAssetStream.m; sourceTree = "<group>"; };
+		277052981A19B870008A0ED4 /* BCInputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCInputStream.h; sourceTree = "<group>"; };
+		277052991A19B870008A0ED4 /* BCInputStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCInputStream.m; sourceTree = "<group>"; };
+		2770529A1A19B870008A0ED4 /* BitcasaAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitcasaAPI.h; sourceTree = "<group>"; };
+		2770529B1A19B870008A0ED4 /* BitcasaAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitcasaAPI.m; sourceTree = "<group>"; };
+		2770529C1A19B870008A0ED4 /* BitcasaSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BitcasaSDK-Prefix.pch"; sourceTree = "<group>"; };
+		2770529D1A19B870008A0ED4 /* Container.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
+		2770529E1A19B870008A0ED4 /* Container.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
+		2770529F1A19B870008A0ED4 /* Credentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
+		277052A01A19B870008A0ED4 /* Credentials.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Credentials.m; sourceTree = "<group>"; };
+		277052A11A19B870008A0ED4 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		277052A21A19B870008A0ED4 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		277052A31A19B870008A0ED4 /* File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
+		277052A41A19B870008A0ED4 /* File.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
+		277052A51A19B870008A0ED4 /* Filesystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Filesystem.h; sourceTree = "<group>"; };
+		277052A61A19B870008A0ED4 /* Filesystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Filesystem.m; sourceTree = "<group>"; };
+		277052A71A19B870008A0ED4 /* Folder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Folder.h; sourceTree = "<group>"; };
+		277052A81A19B870008A0ED4 /* Folder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Folder.m; sourceTree = "<group>"; };
+		277052A91A19B870008A0ED4 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		277052AA1A19B870008A0ED4 /* Item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		277052AB1A19B870008A0ED4 /* NSMutableDictionary+API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+API.h"; sourceTree = "<group>"; };
+		277052AC1A19B870008A0ED4 /* NSMutableDictionary+API.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+API.m"; sourceTree = "<group>"; };
+		277052AD1A19B870008A0ED4 /* NSString+API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+API.h"; sourceTree = "<group>"; };
+		277052AE1A19B870008A0ED4 /* NSString+API.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+API.m"; sourceTree = "<group>"; };
+		277052AF1A19B870008A0ED4 /* Photo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		277052B01A19B870008A0ED4 /* Photo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		277052B11A19B870008A0ED4 /* Session.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		277052B21A19B870008A0ED4 /* Session.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		277052B31A19B870008A0ED4 /* Share.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Share.h; sourceTree = "<group>"; };
+		277052B41A19B870008A0ED4 /* Share.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Share.m; sourceTree = "<group>"; };
+		277052B51A19B870008A0ED4 /* TransferManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferManager.h; sourceTree = "<group>"; };
+		277052B61A19B870008A0ED4 /* TransferManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferManager.m; sourceTree = "<group>"; };
+		277052B71A19B870008A0ED4 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		277052B81A19B870008A0ED4 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		277052B91A19B870008A0ED4 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		277052BA1A19B870008A0ED4 /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		277052BB1A19B870008A0ED4 /* BitcasaSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BitcasaSDK.xcodeproj; sourceTree = "<group>"; };
+		277052BE1A19B870008A0ED4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		277052BF1A19B870008A0ED4 /* Share.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Share.h; sourceTree = "<group>"; };
+		277052C01A19B870008A0ED4 /* Share.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Share.m; sourceTree = "<group>"; };
+		277052C31A19B870008A0ED4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		277052C41A19B870008A0ED4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		277052C51A19B870008A0ED4 /* AuthVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthVC.h; sourceTree = "<group>"; };
+		277052C61A19B870008A0ED4 /* AuthVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthVC.m; sourceTree = "<group>"; };
+		277052C71A19B870008A0ED4 /* AuthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthVC.xib; sourceTree = "<group>"; };
+		277052C91A19B870008A0ED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		277052CA1A19B870008A0ED4 /* BCFileListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCFileListVC.h; sourceTree = "<group>"; };
+		277052CB1A19B870008A0ED4 /* BCFileListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCFileListVC.m; sourceTree = "<group>"; };
+		277052CC1A19B870008A0ED4 /* BCFileListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BCFileListVC.xib; sourceTree = "<group>"; };
+		277052CD1A19B870008A0ED4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		277052CE1A19B870008A0ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277052CF1A19B870008A0ED4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		277052D01A19B870008A0ED4 /* ShareFile.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ShareFile.xcodeproj; sourceTree = "<group>"; };
+		277052D51A19B870008A0ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277052D61A19B870008A0ED4 /* ShareFileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareFileTests.m; sourceTree = "<group>"; };
+		277052E21A19B892008A0ED4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		8443E99619F8D14600BC73BB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		8443EAB419F8D3CA00BC73BB /* BCPlistReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPlistReader.h; sourceTree = "<group>"; };
+		8443EAB519F8D3CA00BC73BB /* BCPlistReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCPlistReader.m; sourceTree = "<group>"; };
+		849D9C4419F7C41700BE600A /* PhotoShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		849D9C4819F7C41700BE600A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849D9C4919F7C41700BE600A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		849D9C4B19F7C41700BE600A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		849D9C4C19F7C41700BE600A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		849D9C5719F7C41700BE600A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		849D9C5D19F7C41700BE600A /* PhotoShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		849D9C6219F7C41800BE600A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849D9C6319F7C41800BE600A /* PhotoShareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoShareTests.m; sourceTree = "<group>"; };
+		84C6572C1A1B2A1C00EF290B /* BCSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCSignUpViewController.h; path = Controllers/BCSignUpViewController.h; sourceTree = "<group>"; };
+		84C6572D1A1B2A1C00EF290B /* BCSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCSignUpViewController.m; path = Controllers/BCSignUpViewController.m; sourceTree = "<group>"; };
+		84C657351A1B2A3E00EF290B /* BCSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BCSignUpViewController.xib; path = Views/BCSignUpViewController.xib; sourceTree = "<group>"; };
+		84D0E2E819F8DD3B00A8DC7A /* BCFriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BCFriendsViewController.xib; path = Views/BCFriendsViewController.xib; sourceTree = "<group>"; };
+		84D0E2E919F8DD3B00A8DC7A /* BCHistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BCHistoryViewController.xib; path = Views/BCHistoryViewController.xib; sourceTree = "<group>"; };
+		84D0E2EA19F8DD3B00A8DC7A /* BCHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BCHomeViewController.xib; path = Views/BCHomeViewController.xib; sourceTree = "<group>"; };
+		84D0E2EB19F8DD3B00A8DC7A /* BCLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BCLoginViewController.xib; path = Views/BCLoginViewController.xib; sourceTree = "<group>"; };
+		84D0E2F319F8DD4F00A8DC7A /* BCFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCFriendsViewController.h; path = Controllers/BCFriendsViewController.h; sourceTree = "<group>"; };
+		84D0E2F419F8DD4F00A8DC7A /* BCFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCFriendsViewController.m; path = Controllers/BCFriendsViewController.m; sourceTree = "<group>"; };
+		84D0E2F519F8DD4F00A8DC7A /* BCHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCHistoryViewController.h; path = Controllers/BCHistoryViewController.h; sourceTree = "<group>"; };
+		84D0E2F619F8DD4F00A8DC7A /* BCHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCHistoryViewController.m; path = Controllers/BCHistoryViewController.m; sourceTree = "<group>"; };
+		84D0E2F719F8DD4F00A8DC7A /* BCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCHomeViewController.h; path = Controllers/BCHomeViewController.h; sourceTree = "<group>"; };
+		84D0E2F819F8DD4F00A8DC7A /* BCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCHomeViewController.m; path = Controllers/BCHomeViewController.m; sourceTree = "<group>"; };
+		84D0E2F919F8DD4F00A8DC7A /* BCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCLoginViewController.h; path = Controllers/BCLoginViewController.h; sourceTree = "<group>"; };
+		84D0E2FA19F8DD4F00A8DC7A /* BCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCLoginViewController.m; path = Controllers/BCLoginViewController.m; sourceTree = "<group>"; };
+		84D23F801A09FF2D00964DB9 /* BCFriendCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCFriendCustomCell.h; path = Views/BCFriendCustomCell.h; sourceTree = "<group>"; };
+		84D23F811A09FF2D00964DB9 /* BCFriendCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCFriendCustomCell.m; path = Views/BCFriendCustomCell.m; sourceTree = "<group>"; };
+		84D23F821A09FF2D00964DB9 /* BCMyPhotoCustomFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCMyPhotoCustomFooterView.h; path = Views/BCMyPhotoCustomFooterView.h; sourceTree = "<group>"; };
+		84D23F831A09FF2D00964DB9 /* BCMyPhotoCustomFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCMyPhotoCustomFooterView.m; path = Views/BCMyPhotoCustomFooterView.m; sourceTree = "<group>"; };
+		84D23F841A09FF2D00964DB9 /* BCMyPhotoCustomHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCMyPhotoCustomHeaderView.h; path = Views/BCMyPhotoCustomHeaderView.h; sourceTree = "<group>"; };
+		84D23F851A09FF2D00964DB9 /* BCMyPhotoCustomHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCMyPhotoCustomHeaderView.m; path = Views/BCMyPhotoCustomHeaderView.m; sourceTree = "<group>"; };
+		84D23F861A09FF2D00964DB9 /* BCTimeLineCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCTimeLineCustomCell.h; path = Views/BCTimeLineCustomCell.h; sourceTree = "<group>"; };
+		84D23F871A09FF2D00964DB9 /* BCTimeLineCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCTimeLineCustomCell.m; path = Views/BCTimeLineCustomCell.m; sourceTree = "<group>"; };
+		84D23F881A09FF2D00964DB9 /* BCTimeLineCustomFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCTimeLineCustomFooterView.h; path = Views/BCTimeLineCustomFooterView.h; sourceTree = "<group>"; };
+		84D23F891A09FF2D00964DB9 /* BCTimeLineCustomFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCTimeLineCustomFooterView.m; path = Views/BCTimeLineCustomFooterView.m; sourceTree = "<group>"; };
+		84D23F8A1A09FF2D00964DB9 /* BCTimeLineCustomHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCTimeLineCustomHeaderView.h; path = Views/BCTimeLineCustomHeaderView.h; sourceTree = "<group>"; };
+		84D23F8B1A09FF2D00964DB9 /* BCTimeLineCustomHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCTimeLineCustomHeaderView.m; path = Views/BCTimeLineCustomHeaderView.m; sourceTree = "<group>"; };
+		84EE7C4719FF6D55005B570F /* photoShare.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = photoShare.xcassets; sourceTree = "<group>"; };
+		F38C336F1A096A65004E29DA /* BCFileTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCFileTransfer.h; path = Models/BCFileTransfer.h; sourceTree = "<group>"; };
+		F38C33701A096A65004E29DA /* BCFileTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCFileTransfer.m; path = Models/BCFileTransfer.m; sourceTree = "<group>"; };
+		F38C33741A096AA1004E29DA /* BCFileTransferService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCFileTransferService.h; sourceTree = "<group>"; };
+		F38C33751A096AA1004E29DA /* BCFileTransferService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFileTransferService.m; sourceTree = "<group>"; };
+		F3EBCE9B19FECFEA006618DE /* BCUIButtonEventTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCUIButtonEventTracking.h; sourceTree = "<group>"; };
+		F3EBCEA319FED018006618DE /* BCPhotoPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCPhotoPresentViewController.h; path = Controllers/BCPhotoPresentViewController.h; sourceTree = "<group>"; };
+		F3EBCEA419FED018006618DE /* BCPhotoPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCPhotoPresentViewController.m; path = Controllers/BCPhotoPresentViewController.m; sourceTree = "<group>"; };
+		F3EBCEA519FED018006618DE /* BCTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCTabBarViewController.h; path = Controllers/BCTabBarViewController.h; sourceTree = "<group>"; };
+		F3EBCEA619FED018006618DE /* BCTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCTabBarViewController.m; path = Controllers/BCTabBarViewController.m; sourceTree = "<group>"; };
+		F3EBCEAF19FED612006618DE /* BitcasaConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BitcasaConfig.plist; sourceTree = "<group>"; };
+		F3EBCEB119FF6542006618DE /* BCUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCUserService.h; sourceTree = "<group>"; };
+		F3EBCEB219FF6542006618DE /* BCUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCUserService.m; sourceTree = "<group>"; };
+		F3EBCEB71A00ECBE006618DE /* BCPSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCPSUser.h; path = Models/BCPSUser.h; sourceTree = "<group>"; };
+		F3EBCEB81A00ECBE006618DE /* BCPSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCPSUser.m; path = Models/BCPSUser.m; sourceTree = "<group>"; };
+		F3EBCEC61A055ADE006618DE /* BCCredentialsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCredentialsService.h; sourceTree = "<group>"; };
+		F3EBCEC71A055ADE006618DE /* BCCredentialsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCredentialsService.m; sourceTree = "<group>"; };
+		F3EBCECA1A069E03006618DE /* BCFolderService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCFolderService.h; sourceTree = "<group>"; };
+		F3EBCECB1A069E03006618DE /* BCFolderService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFolderService.m; sourceTree = "<group>"; };
+		F3EBCED01A06C582006618DE /* BCPSFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCPSFolder.h; path = Models/BCPSFolder.h; sourceTree = "<group>"; };
+		F3EBCED11A06C582006618DE /* BCPSFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCPSFolder.m; path = Models/BCPSFolder.m; sourceTree = "<group>"; };
+		F3F7D6B119F93F6200E8E02C /* BCPhotoShareService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPhotoShareService.h; sourceTree = "<group>"; };
+		F3F7D6B219F93F6200E8E02C /* BCPhotoShareService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCPhotoShareService.m; sourceTree = "<group>"; };
+		F3F7D6B419F9405200E8E02C /* BCPSPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCPSPhoto.h; path = Models/BCPSPhoto.h; sourceTree = "<group>"; };
+		F3F7D6B519F9405200E8E02C /* BCPSPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCPSPhoto.m; path = Models/BCPSPhoto.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849D9C4119F7C41700BE600A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277052E31A19B892008A0ED4 /* MobileCoreServices.framework in Frameworks */,
+				277052E11A19B88A008A0ED4 /* libBitcasaSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849D9C5A19F7C41700BE600A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2770528F1A19B870008A0ED4 /* CloudFS-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				277052901A19B870008A0ED4 /* .gitignore */,
+				277052911A19B870008A0ED4 /* BitcasaSDK */,
+				277052BB1A19B870008A0ED4 /* BitcasaSDK.xcodeproj */,
+				277052BE1A19B870008A0ED4 /* README.md */,
+				277052BF1A19B870008A0ED4 /* Share.h */,
+				277052C01A19B870008A0ED4 /* Share.m */,
+				277052C11A19B870008A0ED4 /* ShareFile */,
+			);
+			name = "CloudFS-iOS";
+			path = "Libraries/CloudFS-iOS";
+			sourceTree = "<group>";
+		};
+		277052911A19B870008A0ED4 /* BitcasaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				277052921A19B870008A0ED4 /* Account.h */,
+				277052931A19B870008A0ED4 /* Account.m */,
+				277052941A19B870008A0ED4 /* Audio.h */,
+				277052951A19B870008A0ED4 /* Audio.m */,
+				277052961A19B870008A0ED4 /* BCAssetStream.h */,
+				277052971A19B870008A0ED4 /* BCAssetStream.m */,
+				277052981A19B870008A0ED4 /* BCInputStream.h */,
+				277052991A19B870008A0ED4 /* BCInputStream.m */,
+				2770529A1A19B870008A0ED4 /* BitcasaAPI.h */,
+				2770529B1A19B870008A0ED4 /* BitcasaAPI.m */,
+				2770529C1A19B870008A0ED4 /* BitcasaSDK-Prefix.pch */,
+				2770529D1A19B870008A0ED4 /* Container.h */,
+				2770529E1A19B870008A0ED4 /* Container.m */,
+				2770529F1A19B870008A0ED4 /* Credentials.h */,
+				277052A01A19B870008A0ED4 /* Credentials.m */,
+				277052A11A19B870008A0ED4 /* Document.h */,
+				277052A21A19B870008A0ED4 /* Document.m */,
+				277052A31A19B870008A0ED4 /* File.h */,
+				277052A41A19B870008A0ED4 /* File.m */,
+				277052A51A19B870008A0ED4 /* Filesystem.h */,
+				277052A61A19B870008A0ED4 /* Filesystem.m */,
+				277052A71A19B870008A0ED4 /* Folder.h */,
+				277052A81A19B870008A0ED4 /* Folder.m */,
+				277052A91A19B870008A0ED4 /* Item.h */,
+				277052AA1A19B870008A0ED4 /* Item.m */,
+				277052AB1A19B870008A0ED4 /* NSMutableDictionary+API.h */,
+				277052AC1A19B870008A0ED4 /* NSMutableDictionary+API.m */,
+				277052AD1A19B870008A0ED4 /* NSString+API.h */,
+				277052AE1A19B870008A0ED4 /* NSString+API.m */,
+				277052AF1A19B870008A0ED4 /* Photo.h */,
+				277052B01A19B870008A0ED4 /* Photo.m */,
+				277052B11A19B870008A0ED4 /* Session.h */,
+				277052B21A19B870008A0ED4 /* Session.m */,
+				277052B31A19B870008A0ED4 /* Share.h */,
+				277052B41A19B870008A0ED4 /* Share.m */,
+				277052B51A19B870008A0ED4 /* TransferManager.h */,
+				277052B61A19B870008A0ED4 /* TransferManager.m */,
+				277052B71A19B870008A0ED4 /* User.h */,
+				277052B81A19B870008A0ED4 /* User.m */,
+				277052B91A19B870008A0ED4 /* Video.h */,
+				277052BA1A19B870008A0ED4 /* Video.m */,
+			);
+			path = BitcasaSDK;
+			sourceTree = "<group>";
+		};
+		277052BC1A19B870008A0ED4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				277052DA1A19B870008A0ED4 /* libBitcasaSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		277052C11A19B870008A0ED4 /* ShareFile */ = {
+			isa = PBXGroup;
+			children = (
+				277052C21A19B870008A0ED4 /* ShareFile */,
+				277052D01A19B870008A0ED4 /* ShareFile.xcodeproj */,
+				277052D41A19B870008A0ED4 /* ShareFileTests */,
+			);
+			path = ShareFile;
+			sourceTree = "<group>";
+		};
+		277052C21A19B870008A0ED4 /* ShareFile */ = {
+			isa = PBXGroup;
+			children = (
+				277052C31A19B870008A0ED4 /* AppDelegate.h */,
+				277052C41A19B870008A0ED4 /* AppDelegate.m */,
+				277052C51A19B870008A0ED4 /* AuthVC.h */,
+				277052C61A19B870008A0ED4 /* AuthVC.m */,
+				277052C71A19B870008A0ED4 /* AuthVC.xib */,
+				277052C81A19B870008A0ED4 /* LaunchScreen.xib */,
+				277052CA1A19B870008A0ED4 /* BCFileListVC.h */,
+				277052CB1A19B870008A0ED4 /* BCFileListVC.m */,
+				277052CC1A19B870008A0ED4 /* BCFileListVC.xib */,
+				277052CD1A19B870008A0ED4 /* Images.xcassets */,
+				277052CE1A19B870008A0ED4 /* Info.plist */,
+				277052CF1A19B870008A0ED4 /* main.m */,
+			);
+			path = ShareFile;
+			sourceTree = "<group>";
+		};
+		277052D11A19B870008A0ED4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				277052DE1A19B870008A0ED4 /* ShareFile.app */,
+				277052E01A19B870008A0ED4 /* ShareFileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		277052D41A19B870008A0ED4 /* ShareFileTests */ = {
+			isa = PBXGroup;
+			children = (
+				277052D51A19B870008A0ED4 /* Info.plist */,
+				277052D61A19B870008A0ED4 /* ShareFileTests.m */,
+			);
+			path = ShareFileTests;
+			sourceTree = "<group>";
+		};
+		8443E99519F8CF1A00BC73BB /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				277052E21A19B892008A0ED4 /* MobileCoreServices.framework */,
+				2770528F1A19B870008A0ED4 /* CloudFS-iOS */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		8443EAB719F8D6CA00BC73BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8443E99619F8D14600BC73BB /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		849D9C3919F7C2FB00BE600A = {
+			isa = PBXGroup;
+			children = (
+				849D9C4619F7C41700BE600A /* PhotoShare */,
+				849D9C6019F7C41800BE600A /* PhotoShareTests */,
+				849D9C4519F7C41700BE600A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		849D9C4519F7C41700BE600A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				849D9C4419F7C41700BE600A /* PhotoShare.app */,
+				849D9C5D19F7C41700BE600A /* PhotoShareTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		849D9C4619F7C41700BE600A /* PhotoShare */ = {
+			isa = PBXGroup;
+			children = (
+				F3EBCE9B19FECFEA006618DE /* BCUIButtonEventTracking.h */,
+				F3F7D6B019F93F6200E8E02C /* Services */,
+				84D0E30019F8DD8000A8DC7A /* Models */,
+				84D0E2E619F8DCE300A8DC7A /* Views */,
+				84D0E2E419F8DCC300A8DC7A /* Controllers */,
+				849D9C4B19F7C41700BE600A /* AppDelegate.h */,
+				849D9C4C19F7C41700BE600A /* AppDelegate.m */,
+				8443EAB419F8D3CA00BC73BB /* BCPlistReader.h */,
+				8443EAB519F8D3CA00BC73BB /* BCPlistReader.m */,
+				8443E99519F8CF1A00BC73BB /* Libraries */,
+				8443EAB719F8D6CA00BC73BB /* Frameworks */,
+				849D9C5619F7C41700BE600A /* LaunchScreen.xib */,
+				849D9C4719F7C41700BE600A /* Supporting Files */,
+				84EE7C4719FF6D55005B570F /* photoShare.xcassets */,
+			);
+			path = PhotoShare;
+			sourceTree = "<group>";
+		};
+		849D9C4719F7C41700BE600A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3EBCEAF19FED612006618DE /* BitcasaConfig.plist */,
+				849D9C4819F7C41700BE600A /* Info.plist */,
+				849D9C4919F7C41700BE600A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		849D9C6019F7C41800BE600A /* PhotoShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				849D9C6319F7C41800BE600A /* PhotoShareTests.m */,
+				849D9C6119F7C41800BE600A /* Supporting Files */,
+			);
+			path = PhotoShareTests;
+			sourceTree = "<group>";
+		};
+		849D9C6119F7C41800BE600A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				849D9C6219F7C41800BE600A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84D0E2E419F8DCC300A8DC7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3EBCEA319FED018006618DE /* BCPhotoPresentViewController.h */,
+				F3EBCEA419FED018006618DE /* BCPhotoPresentViewController.m */,
+				F3EBCEA519FED018006618DE /* BCTabBarViewController.h */,
+				F3EBCEA619FED018006618DE /* BCTabBarViewController.m */,
+				84D0E2F319F8DD4F00A8DC7A /* BCFriendsViewController.h */,
+				84D0E2F419F8DD4F00A8DC7A /* BCFriendsViewController.m */,
+				84D0E2F519F8DD4F00A8DC7A /* BCHistoryViewController.h */,
+				84D0E2F619F8DD4F00A8DC7A /* BCHistoryViewController.m */,
+				84D0E2F719F8DD4F00A8DC7A /* BCHomeViewController.h */,
+				84D0E2F819F8DD4F00A8DC7A /* BCHomeViewController.m */,
+				84D0E2F919F8DD4F00A8DC7A /* BCLoginViewController.h */,
+				84D0E2FA19F8DD4F00A8DC7A /* BCLoginViewController.m */,
+				84C6572C1A1B2A1C00EF290B /* BCSignUpViewController.h */,
+				84C6572D1A1B2A1C00EF290B /* BCSignUpViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		84D0E2E619F8DCE300A8DC7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84D23F801A09FF2D00964DB9 /* BCFriendCustomCell.h */,
+				84D23F811A09FF2D00964DB9 /* BCFriendCustomCell.m */,
+				84D23F821A09FF2D00964DB9 /* BCMyPhotoCustomFooterView.h */,
+				84D23F831A09FF2D00964DB9 /* BCMyPhotoCustomFooterView.m */,
+				84D23F841A09FF2D00964DB9 /* BCMyPhotoCustomHeaderView.h */,
+				84D23F851A09FF2D00964DB9 /* BCMyPhotoCustomHeaderView.m */,
+				84D23F861A09FF2D00964DB9 /* BCTimeLineCustomCell.h */,
+				84D23F871A09FF2D00964DB9 /* BCTimeLineCustomCell.m */,
+				84D23F881A09FF2D00964DB9 /* BCTimeLineCustomFooterView.h */,
+				84D23F891A09FF2D00964DB9 /* BCTimeLineCustomFooterView.m */,
+				84D23F8A1A09FF2D00964DB9 /* BCTimeLineCustomHeaderView.h */,
+				84D23F8B1A09FF2D00964DB9 /* BCTimeLineCustomHeaderView.m */,
+				84C657351A1B2A3E00EF290B /* BCSignUpViewController.xib */,
+				84D0E2E819F8DD3B00A8DC7A /* BCFriendsViewController.xib */,
+				84D0E2E919F8DD3B00A8DC7A /* BCHistoryViewController.xib */,
+				84D0E2EA19F8DD3B00A8DC7A /* BCHomeViewController.xib */,
+				84D0E2EB19F8DD3B00A8DC7A /* BCLoginViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84D0E30019F8DD8000A8DC7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F38C336F1A096A65004E29DA /* BCFileTransfer.h */,
+				F38C33701A096A65004E29DA /* BCFileTransfer.m */,
+				F3F7D6B419F9405200E8E02C /* BCPSPhoto.h */,
+				F3F7D6B519F9405200E8E02C /* BCPSPhoto.m */,
+				F3EBCEB71A00ECBE006618DE /* BCPSUser.h */,
+				F3EBCEB81A00ECBE006618DE /* BCPSUser.m */,
+				F3EBCED01A06C582006618DE /* BCPSFolder.h */,
+				F3EBCED11A06C582006618DE /* BCPSFolder.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F3F7D6B019F93F6200E8E02C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F3F7D6B119F93F6200E8E02C /* BCPhotoShareService.h */,
+				F3F7D6B219F93F6200E8E02C /* BCPhotoShareService.m */,
+				F3EBCEB119FF6542006618DE /* BCUserService.h */,
+				F3EBCEB219FF6542006618DE /* BCUserService.m */,
+				F3EBCEC61A055ADE006618DE /* BCCredentialsService.h */,
+				F3EBCEC71A055ADE006618DE /* BCCredentialsService.m */,
+				F3EBCECA1A069E03006618DE /* BCFolderService.h */,
+				F3EBCECB1A069E03006618DE /* BCFolderService.m */,
+				F38C33741A096AA1004E29DA /* BCFileTransferService.h */,
+				F38C33751A096AA1004E29DA /* BCFileTransferService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		849D9C4319F7C41700BE600A /* PhotoShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849D9C6519F7C41800BE600A /* Build configuration list for PBXNativeTarget "PhotoShare" */;
+			buildPhases = (
+				849D9C4019F7C41700BE600A /* Sources */,
+				849D9C4119F7C41700BE600A /* Frameworks */,
+				849D9C4219F7C41700BE600A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoShare;
+			productName = PhotoShare;
+			productReference = 849D9C4419F7C41700BE600A /* PhotoShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		849D9C5C19F7C41700BE600A /* PhotoShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849D9C6819F7C41800BE600A /* Build configuration list for PBXNativeTarget "PhotoShareTests" */;
+			buildPhases = (
+				849D9C5919F7C41700BE600A /* Sources */,
+				849D9C5A19F7C41700BE600A /* Frameworks */,
+				849D9C5B19F7C41700BE600A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849D9C5F19F7C41800BE600A /* PBXTargetDependency */,
+			);
+			name = PhotoShareTests;
+			productName = PhotoShareTests;
+			productReference = 849D9C5D19F7C41700BE600A /* PhotoShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		849D9C3A19F7C2FB00BE600A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					849D9C4319F7C41700BE600A = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = MSFPXEWALH;
+					};
+					849D9C5C19F7C41700BE600A = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 849D9C4319F7C41700BE600A;
+					};
+				};
+			};
+			buildConfigurationList = 849D9C3D19F7C2FB00BE600A /* Build configuration list for PBXProject "PhotoShare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 849D9C3919F7C2FB00BE600A;
+			productRefGroup = 849D9C4519F7C41700BE600A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 277052BC1A19B870008A0ED4 /* Products */;
+					ProjectRef = 277052BB1A19B870008A0ED4 /* BitcasaSDK.xcodeproj */;
+				},
+				{
+					ProductGroup = 277052D11A19B870008A0ED4 /* Products */;
+					ProjectRef = 277052D01A19B870008A0ED4 /* ShareFile.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				849D9C4319F7C41700BE600A /* PhotoShare */,
+				849D9C5C19F7C41700BE600A /* PhotoShareTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		277052DA1A19B870008A0ED4 /* libBitcasaSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBitcasaSDK.a;
+			remoteRef = 277052D91A19B870008A0ED4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		277052DE1A19B870008A0ED4 /* ShareFile.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ShareFile.app;
+			remoteRef = 277052DD1A19B870008A0ED4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		277052E01A19B870008A0ED4 /* ShareFileTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ShareFileTests.xctest;
+			remoteRef = 277052DF1A19B870008A0ED4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		849D9C4219F7C41700BE600A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D0E2F019F8DD3B00A8DC7A /* BCLoginViewController.xib in Resources */,
+				F3EBCEB019FED612006618DE /* BitcasaConfig.plist in Resources */,
+				84D0E2EE19F8DD3B00A8DC7A /* BCHistoryViewController.xib in Resources */,
+				84EE7C4819FF6D55005B570F /* photoShare.xcassets in Resources */,
+				84D0E2ED19F8DD3B00A8DC7A /* BCFriendsViewController.xib in Resources */,
+				84D0E2EF19F8DD3B00A8DC7A /* BCHomeViewController.xib in Resources */,
+				84C657361A1B2A3E00EF290B /* BCSignUpViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849D9C5B19F7C41700BE600A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		849D9C4019F7C41700BE600A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D23F8C1A09FF2D00964DB9 /* BCFriendCustomCell.m in Sources */,
+				F3EBCEB91A00ECBE006618DE /* BCPSUser.m in Sources */,
+				F3F7D6B619F9405200E8E02C /* BCPSPhoto.m in Sources */,
+				849D9C4D19F7C41700BE600A /* AppDelegate.m in Sources */,
+				84D23F8D1A09FF2D00964DB9 /* BCMyPhotoCustomFooterView.m in Sources */,
+				F3EBCEB319FF6542006618DE /* BCUserService.m in Sources */,
+				84D23F8F1A09FF2D00964DB9 /* BCTimeLineCustomCell.m in Sources */,
+				84D0E2FE19F8DD4F00A8DC7A /* BCHomeViewController.m in Sources */,
+				F38C33761A096AA1004E29DA /* BCFileTransferService.m in Sources */,
+				F38C33711A096A65004E29DA /* BCFileTransfer.m in Sources */,
+				84D23F911A09FF2D00964DB9 /* BCTimeLineCustomHeaderView.m in Sources */,
+				84D0E2FD19F8DD4F00A8DC7A /* BCHistoryViewController.m in Sources */,
+				F3EBCEC81A055ADE006618DE /* BCCredentialsService.m in Sources */,
+				84D0E2FC19F8DD4F00A8DC7A /* BCFriendsViewController.m in Sources */,
+				84C6572F1A1B2A1C00EF290B /* BCSignUpViewController.m in Sources */,
+				84D23F901A09FF2D00964DB9 /* BCTimeLineCustomFooterView.m in Sources */,
+				F3EBCEA719FED018006618DE /* BCPhotoPresentViewController.m in Sources */,
+				849D9C4A19F7C41700BE600A /* main.m in Sources */,
+				F3EBCEA819FED018006618DE /* BCTabBarViewController.m in Sources */,
+				8443EAB619F8D3CA00BC73BB /* BCPlistReader.m in Sources */,
+				84D0E2FF19F8DD4F00A8DC7A /* BCLoginViewController.m in Sources */,
+				84D23F8E1A09FF2D00964DB9 /* BCMyPhotoCustomHeaderView.m in Sources */,
+				F3EBCECC1A069E03006618DE /* BCFolderService.m in Sources */,
+				F3F7D6B319F93F6200E8E02C /* BCPhotoShareService.m in Sources */,
+				F3EBCED21A06C582006618DE /* BCPSFolder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849D9C5919F7C41700BE600A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849D9C6419F7C41800BE600A /* PhotoShareTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		849D9C5F19F7C41800BE600A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849D9C4319F7C41700BE600A /* PhotoShare */;
+			targetProxy = 849D9C5E19F7C41800BE600A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		277052C81A19B870008A0ED4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				277052C91A19B870008A0ED4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		849D9C5619F7C41700BE600A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849D9C5719F7C41700BE600A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		849D9C3E19F7C2FB00BE600A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		849D9C3F19F7C2FB00BE600A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		849D9C6619F7C41800BE600A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chamindu Munasinghe (U685Q696PA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chamindu Munasinghe (U685Q696PA)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = PhotoShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2a5a43a6-2c82-4007-9ce5-e6d0b33a2cc5";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		849D9C6719F7C41800BE600A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = PhotoShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2a5a43a6-2c82-4007-9ce5-e6d0b33a2cc5";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		849D9C6919F7C41800BE600A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = PhotoShareTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2a5a43a6-2c82-4007-9ce5-e6d0b33a2cc5";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoShare.app/PhotoShare";
+			};
+			name = Debug;
+		};
+		849D9C6A19F7C41800BE600A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = PhotoShareTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2a5a43a6-2c82-4007-9ce5-e6d0b33a2cc5";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoShare.app/PhotoShare";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849D9C3D19F7C2FB00BE600A /* Build configuration list for PBXProject "PhotoShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849D9C3E19F7C2FB00BE600A /* Debug */,
+				849D9C3F19F7C2FB00BE600A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849D9C6519F7C41800BE600A /* Build configuration list for PBXNativeTarget "PhotoShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849D9C6619F7C41800BE600A /* Debug */,
+				849D9C6719F7C41800BE600A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849D9C6819F7C41800BE600A /* Build configuration list for PBXNativeTarget "PhotoShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849D9C6919F7C41800BE600A /* Debug */,
+				849D9C6A19F7C41800BE600A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 849D9C3A19F7C2FB00BE600A /* Project object */;
+}

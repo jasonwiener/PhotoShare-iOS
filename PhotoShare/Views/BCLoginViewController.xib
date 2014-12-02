@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BCLoginViewController">
+            <connections>
+                <outlet property="password" destination="0X3-Mp-awV" id="jTS-6U-gRO"/>
+                <outlet property="userName" destination="47Z-yM-cBt" id="F5S-2H-cnO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0X3-Mp-awV" userLabel="passWordTextFeild">
+                    <rect key="frame" x="20" y="253" width="560" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="0.5"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="47Z-yM-cBt" userLabel="userNameTextField">
+                    <rect key="frame" x="20" y="215" width="560" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="">
+                        <accessibilityTraits key="traits" none="YES"/>
+                    </accessibility>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="0.5"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gf2-fy-nzK" userLabel="SignInButton">
+                    <rect key="frame" x="20" y="292" width="560" height="30"/>
+                    <color key="backgroundColor" red="0.13725490200000001" green="0.50980392159999999" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="0.5"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="signIn:" destination="-1" eventType="touchUpInside" id="u4X-MG-YRz"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhotoShareLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pAk-pQ-Ncq">
+                    <rect key="frame" x="181" y="107" width="239" height="32"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNj-1Z-vcQ" userLabel="SignInButton">
+                    <rect key="frame" x="20" y="431" width="560" height="30"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Registration">
+                        <color key="titleColor" red="0.13725490200000001" green="0.50980392159999999" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="signUp:" destination="-1" eventType="touchUpInside" id="TsO-HE-whc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DNj-1Z-vcQ" secondAttribute="trailing" constant="20" id="2Zf-wZ-PL9"/>
+                <constraint firstItem="47Z-yM-cBt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="3OX-h8-rSQ"/>
+                <constraint firstAttribute="trailing" secondItem="gf2-fy-nzK" secondAttribute="trailing" constant="20" id="Dkl-7f-Lod"/>
+                <constraint firstAttribute="bottom" secondItem="DNj-1Z-vcQ" secondAttribute="bottom" constant="139" id="KmZ-ZW-da1"/>
+                <constraint firstItem="DNj-1Z-vcQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ZVj-aG-knM"/>
+                <constraint firstItem="47Z-yM-cBt" firstAttribute="top" secondItem="pAk-pQ-Ncq" secondAttribute="bottom" constant="76" id="eUs-fF-JcS"/>
+                <constraint firstItem="gf2-fy-nzK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="292" id="iYf-hO-xis"/>
+                <constraint firstItem="pAk-pQ-Ncq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="107" id="jHT-vU-oYE"/>
+                <constraint firstItem="gf2-fy-nzK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="mZp-WG-jtV"/>
+                <constraint firstAttribute="trailing" secondItem="0X3-Mp-awV" secondAttribute="trailing" constant="20" id="mk4-4b-mAo"/>
+                <constraint firstAttribute="trailing" secondItem="47Z-yM-cBt" secondAttribute="trailing" constant="20" id="nFg-GF-oHg"/>
+                <constraint firstItem="gf2-fy-nzK" firstAttribute="top" secondItem="0X3-Mp-awV" secondAttribute="bottom" constant="9" id="qi7-Px-moY"/>
+                <constraint firstItem="0X3-Mp-awV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="szO-vz-DdI"/>
+                <constraint firstItem="pAk-pQ-Ncq" firstAttribute="centerX" secondItem="0X3-Mp-awV" secondAttribute="centerX" id="uTX-Wg-NZ1"/>
+            </constraints>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PhotoShareLogo" width="239" height="32"/>
+    </resources>
+</document>

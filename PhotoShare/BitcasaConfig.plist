@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BC_ADMIN_ID</key>
+	<string>Fe824Hz-pyRPUTxj7W-AI8bY6ik1fQqiaW-qL9fUkS0</string>
+	<key>BC_ADMIN_SECRET</key>
+	<string>qnZl-o2yCy3M7tL-0sP9sG8olcUd3rRuRC6IN6jaXdnJlItWJl2omnu7i6bz7UV64kYHfoISbrUYBFt2u83Svg</string>
+	<key>BC_API_SERVER_URL</key>
+	<string>https://wt5opuw5go.cloudfs.io</string>
+	<key>BC_CLIENT_ID</key>
+	<string>yAw86w-oqG6Pa16zGParEIVJcpM_aD8YQgSzXN-A_Ps</string>
+	<key>BC_SECRET</key>
+	<string>jl8ZPG4LWLmixsDqQAwPDFknosaVsN40fuZ94P0Y1nymtSDS3tdjRg12Ak_nMue-X4g-JFanwygmoEyy2wdzpA</string>
+	<key>BC_USER_REGISTRATION_URL</key>
+	<string>http://172.16.1.22:8011/api/user/</string>
+</dict>
+</plist>
