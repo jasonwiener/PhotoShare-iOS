@@ -48,7 +48,7 @@
                                                                             target:self
                                                                             action:@selector(cancel:)];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Registration"
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Register"
                                                                               style:UIBarButtonItemStyleBordered
                                                                              target:self
                                                                              action:@selector(signUp:)];
@@ -82,7 +82,7 @@
                                          [self dismissViewControllerAnimated:YES completion:nil];
                                          
                                      } else {
-                                         [self showAlertWithMessage:@"Registration up Error."];
+                                         [self showAlertWithMessage:@"Registration Error."];
                                      }
                                      
                                      [_activityIndicator stopAnimating];

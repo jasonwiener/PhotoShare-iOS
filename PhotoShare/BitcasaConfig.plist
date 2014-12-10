@@ -2,17 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BC_ADMIN_ID</key>
-	<string>Fe824Hz-pyRPUTxj7W-AI8bY6ik1fQqiaW-qL9fUkS0</string>
-	<key>BC_ADMIN_SECRET</key>
-	<string>qnZl-o2yCy3M7tL-0sP9sG8olcUd3rRuRC6IN6jaXdnJlItWJl2omnu7i6bz7UV64kYHfoISbrUYBFt2u83Svg</string>
 	<key>BC_API_SERVER_URL</key>
-	<string>https://wt5opuw5go.cloudfs.io</string>
+	<string>https://xk09pv9fc5.cloudfs.io</string>
 	<key>BC_CLIENT_ID</key>
-	<string>yAw86w-oqG6Pa16zGParEIVJcpM_aD8YQgSzXN-A_Ps</string>
+	<string>bJ9tTcy2DnvBbF7hJ2j_MSEgfDJ5wXmrN9QcJh04e7A</string>
 	<key>BC_SECRET</key>
-	<string>jl8ZPG4LWLmixsDqQAwPDFknosaVsN40fuZ94P0Y1nymtSDS3tdjRg12Ak_nMue-X4g-JFanwygmoEyy2wdzpA</string>
+	<string>1y5U1eIVhW4SHonquOCtzbpNotM6wd7OUTFOwMcEIjpBs20i92P26Aa0Df_67CzsXxXZcoirM9ogJ48HmlMULQ</string>
 	<key>BC_USER_REGISTRATION_URL</key>
 	<string>http://172.16.1.22:8011/api/user/</string>
+	<key>BC_USER_AUTH_URL</key>
+	<string>http://172.16.1.22:8011/api/authenticate/</string>
+	<key>BC_APP_ACCOUNT_USER</key>
+	<string>common@c.com</string>
+	<key>BC_APP_ACCOUNT_PASSWORD</key>
+	<string>123456</string>
 </dict>
 </plist>

@@ -116,11 +116,11 @@
         [fileManager isDeletableFileAtPath:url.path] &&
         [fileManager removeItemAtPath:url.path error:&error])
     {
-        NSLog(@"Deleted last captured image");
+        NSLog(@"Deleted last captured image.");
     }
     else
     {
-        NSLog(@"Error is occur while deleting %@",error);
+        NSLog(@"Error occured while deleting - %@.",error);
     }
 }
 
@@ -152,8 +152,6 @@
     [self disableObjects];
     
     [self.photoShareService uploadPhotoDetails:uploadTimeLinePhoto andFile:capturedImageURL withCompletion:^(BOOL success) {
-        NSLog(@"upload.....");
-        
         [self enableObjects];
         [self dismissViewControllerAnimated:YES completion:nil];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadTimeLine" object:nil];

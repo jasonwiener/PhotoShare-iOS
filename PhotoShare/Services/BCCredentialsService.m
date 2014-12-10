@@ -24,13 +24,16 @@
 @implementation BCCredentialsService
 {
     Session *_session;
+    
     NSMutableURLRequest *_userCreationRequest;
     NSMutableDictionary *_userCreationHttpBody;
+    
+    NSMutableURLRequest *_userAuthRequest;
+    NSMutableDictionary *_userAuthHttpBody;
+    
+    NSString *_appAccountUsername;
+    NSString *_appAccountPassword;
 }
-
-// App Account credentials
-static NSString *const appAccountUsername = @"nalinda@calcey.com";
-static NSString *const appAccountPassword = @"user@123";
 
 // Keys used to store access tokens in User Defaults
 static NSString *const userAccessTokenKey = @"User Access Token Key";
@@ -49,26 +52,26 @@ static NSString *const usernameKey = @"Username Key";
         NSString *apiServerUrl = [plistReader appConfigValueForKey:@"BC_API_SERVER_URL"];
         NSString *clientId = [plistReader appConfigValueForKey:@"BC_CLIENT_ID"];
         NSString *secret = [plistReader appConfigValueForKey:@"BC_SECRET"];
-        NSString *adminId = [plistReader appConfigValueForKey:@"BC_ADMIN_ID"];
-        NSString *adminSecret = [plistReader appConfigValueForKey:@"BC_ADMIN_SECRET"];
         NSString *userRegistrationUrl = [plistReader appConfigValueForKey:@"BC_USER_REGISTRATION_URL"];
+        _appAccountUsername = [plistReader appConfigValueForKey:@"BC_APP_ACCOUNT_USER"];
+        _appAccountPassword = [plistReader appConfigValueForKey:@"BC_APP_ACCOUNT_PASSWORD"];
+        NSString *userAuthUrl = [plistReader appConfigValueForKey:@"BC_USER_AUTH_URL"];
         
         _session =  [[Session alloc] initWithServerURL:apiServerUrl clientId:clientId clientSecret:secret];
-        _userAccessToken = [[NSUserDefaults standardUserDefaults] objectForKey:userAccessTokenKey];
-        _appAccessToken = [[NSUserDefaults standardUserDefaults] objectForKey:appAccessTokenKey];
-        _username = [[NSUserDefaults standardUserDefaults] objectForKey:usernameKey];
         
-         _userCreationRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:userRegistrationUrl]];
+        // User Creation HTTP Request & HTTP Body
+        _userCreationRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:userRegistrationUrl]];
         _userCreationRequest.HTTPMethod = @"POST";
         [_userCreationRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         [_userCreationRequest setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        _userCreationHttpBody = [NSMutableDictionary dictionary];
         
-        _userCreationHttpBody = [[NSMutableDictionary alloc] init];
-        [_userCreationHttpBody setValue:apiServerUrl forKey:@"api_server"];
-        [_userCreationHttpBody setValue:clientId forKey:@"client_id"];
-        [_userCreationHttpBody setValue:secret forKey:@"secret_key"];
-        [_userCreationHttpBody setValue:adminId forKey:@"admin_id"];
-        [_userCreationHttpBody setValue:adminSecret forKey:@"admin_secret"];
+        // User Auth HTTP Request & HTTP Body
+        _userAuthRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:userAuthUrl]];
+        _userAuthRequest.HTTPMethod = @"POST";
+        [_userAuthRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        [_userAuthRequest setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        _userAuthHttpBody = [NSMutableDictionary dictionary];
     }
     
     return self;
@@ -89,19 +92,19 @@ static NSString *const usernameKey = @"Username Key";
                andPassword:(NSString *)password
                 completion:(void (^)(BOOL))completion
 {
-    [_session authenticateWithUsername:username
+    [self authenticateWithUsername:username
                            andPassword:password
-                            completion:^(BOOL success) {
+                            completion:^(BOOL success, NSString *userToken) {
                                 
                                 if (success) {
                                     self.username = username;
-                                    self.userAccessToken = [NSString stringWithString:[Credentials sharedInstance].accessToken];
+                                    self.userAccessToken = userToken;
                                     
-                                    [_session authenticateWithUsername:appAccountUsername
-                                                            andPassword:appAccountPassword
-                                                            completion:^(BOOL success) {
+                                    [self authenticateWithUsername:_appAccountUsername
+                                                            andPassword:_appAccountPassword
+                                                            completion:^(BOOL success, NSString *appToken) {
                                                                 if (success) {
-                                                                    self.appAccessToken = [NSString stringWithString:[Credentials sharedInstance].accessToken];
+                                                                    self.appAccessToken = appToken;
                                                                     completion(YES);
                                                                 }
                                                                 else {
@@ -181,5 +184,45 @@ static NSString *const usernameKey = @"Username Key";
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+#pragma mark - Private Methods
+- (void)authenticateWithUsername:(NSString *)username
+                     andPassword:(NSString *)password
+                      completion:(void (^)(BOOL status, NSString *token))completion
+{
+    _userAuthHttpBody[@"username"] = username;
+    _userAuthHttpBody[@"password"] = password;
+    
+    NSError *jsonError = nil;
+    _userAuthRequest.HTTPBody = [NSJSONSerialization dataWithJSONObject:_userAuthHttpBody options:kNilOptions error:&jsonError];
+    
+    [NSURLConnection sendAsynchronousRequest:_userAuthRequest
+                                       queue:[NSOperationQueue currentQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                               if ([response respondsToSelector:@selector(statusCode)]) {
+                                   NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+                                   if (httpResponse.statusCode == 200) {
+                                       NSError *jsonError = nil;
+                                       NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data
+                                                                                                      options:kNilOptions
+                                                                                                        error:&jsonError];
+                                       if (!jsonError) {
+                                           NSString *authToken = dataDictionary[@"auth_token"];
+                                           completion(YES, authToken);
+                                       }
+                                       else {
+                                           completion(NO, nil);
+                                       }
+                                       
+                                   }
+                                   else {
+                                       completion(NO, nil);
+                                   }
+                               }
+                               else {
+                                   completion(NO, nil);
+                               }
+                           }];
+
+}
 
 @end

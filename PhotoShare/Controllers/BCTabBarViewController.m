@@ -243,7 +243,7 @@
                                                              delegate:self
                                                     cancelButtonTitle:@"Cancel"
                                                destructiveButtonTitle:nil
-                                                    otherButtonTitles:@"My Photos", @"Follow Friends", @"Log Out", @"Remove Account", nil];
+                                                    otherButtonTitles:@"My Photos", @"Follow Friends", @"Log Out", nil];
     [actionSheet setTag:SETTING_ACTION_SHEET_TAG];
     [actionSheet showFromTabBar:self.tabBar];
 }

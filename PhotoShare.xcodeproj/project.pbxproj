@@ -52,20 +52,6 @@
 			remoteGlobalIDString = 77BEB33119A68F5C00D4BE80;
 			remoteInfo = BitcasaSDK;
 		};
-		277052DD1A19B870008A0ED4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 277052D01A19B870008A0ED4 /* ShareFile.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 77062E8019E5F42700186334;
-			remoteInfo = ShareFile;
-		};
-		277052DF1A19B870008A0ED4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 277052D01A19B870008A0ED4 /* ShareFile.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 77062E9919E5F42700186334;
-			remoteInfo = ShareFileTests;
-		};
 		849D9C5E19F7C41800BE600A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 849D9C3A19F7C2FB00BE600A /* Project object */;
@@ -73,70 +59,17 @@
 			remoteGlobalIDString = 849D9C4319F7C41700BE600A;
 			remoteInfo = PhotoShare;
 		};
+		F3904B4A1A38604D00E32E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277052BB1A19B870008A0ED4 /* BitcasaSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 77BEB33019A68F5C00D4BE80;
+			remoteInfo = BitcasaSDK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		277052901A19B870008A0ED4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		277052921A19B870008A0ED4 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
-		277052931A19B870008A0ED4 /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
-		277052941A19B870008A0ED4 /* Audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
-		277052951A19B870008A0ED4 /* Audio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audio.m; sourceTree = "<group>"; };
-		277052961A19B870008A0ED4 /* BCAssetStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCAssetStream.h; sourceTree = "<group>"; };
-		277052971A19B870008A0ED4 /* BCAssetStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCAssetStream.m; sourceTree = "<group>"; };
-		277052981A19B870008A0ED4 /* BCInputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCInputStream.h; sourceTree = "<group>"; };
-		277052991A19B870008A0ED4 /* BCInputStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCInputStream.m; sourceTree = "<group>"; };
-		2770529A1A19B870008A0ED4 /* BitcasaAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitcasaAPI.h; sourceTree = "<group>"; };
-		2770529B1A19B870008A0ED4 /* BitcasaAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitcasaAPI.m; sourceTree = "<group>"; };
-		2770529C1A19B870008A0ED4 /* BitcasaSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BitcasaSDK-Prefix.pch"; sourceTree = "<group>"; };
-		2770529D1A19B870008A0ED4 /* Container.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
-		2770529E1A19B870008A0ED4 /* Container.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
-		2770529F1A19B870008A0ED4 /* Credentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
-		277052A01A19B870008A0ED4 /* Credentials.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Credentials.m; sourceTree = "<group>"; };
-		277052A11A19B870008A0ED4 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
-		277052A21A19B870008A0ED4 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
-		277052A31A19B870008A0ED4 /* File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
-		277052A41A19B870008A0ED4 /* File.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
-		277052A51A19B870008A0ED4 /* Filesystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Filesystem.h; sourceTree = "<group>"; };
-		277052A61A19B870008A0ED4 /* Filesystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Filesystem.m; sourceTree = "<group>"; };
-		277052A71A19B870008A0ED4 /* Folder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Folder.h; sourceTree = "<group>"; };
-		277052A81A19B870008A0ED4 /* Folder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Folder.m; sourceTree = "<group>"; };
-		277052A91A19B870008A0ED4 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		277052AA1A19B870008A0ED4 /* Item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
-		277052AB1A19B870008A0ED4 /* NSMutableDictionary+API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+API.h"; sourceTree = "<group>"; };
-		277052AC1A19B870008A0ED4 /* NSMutableDictionary+API.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+API.m"; sourceTree = "<group>"; };
-		277052AD1A19B870008A0ED4 /* NSString+API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+API.h"; sourceTree = "<group>"; };
-		277052AE1A19B870008A0ED4 /* NSString+API.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+API.m"; sourceTree = "<group>"; };
-		277052AF1A19B870008A0ED4 /* Photo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
-		277052B01A19B870008A0ED4 /* Photo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
-		277052B11A19B870008A0ED4 /* Session.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
-		277052B21A19B870008A0ED4 /* Session.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
-		277052B31A19B870008A0ED4 /* Share.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Share.h; sourceTree = "<group>"; };
-		277052B41A19B870008A0ED4 /* Share.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Share.m; sourceTree = "<group>"; };
-		277052B51A19B870008A0ED4 /* TransferManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferManager.h; sourceTree = "<group>"; };
-		277052B61A19B870008A0ED4 /* TransferManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferManager.m; sourceTree = "<group>"; };
-		277052B71A19B870008A0ED4 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		277052B81A19B870008A0ED4 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		277052B91A19B870008A0ED4 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
-		277052BA1A19B870008A0ED4 /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 		277052BB1A19B870008A0ED4 /* BitcasaSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BitcasaSDK.xcodeproj; sourceTree = "<group>"; };
-		277052BE1A19B870008A0ED4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		277052BF1A19B870008A0ED4 /* Share.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Share.h; sourceTree = "<group>"; };
-		277052C01A19B870008A0ED4 /* Share.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Share.m; sourceTree = "<group>"; };
-		277052C31A19B870008A0ED4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		277052C41A19B870008A0ED4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		277052C51A19B870008A0ED4 /* AuthVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthVC.h; sourceTree = "<group>"; };
-		277052C61A19B870008A0ED4 /* AuthVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthVC.m; sourceTree = "<group>"; };
-		277052C71A19B870008A0ED4 /* AuthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthVC.xib; sourceTree = "<group>"; };
-		277052C91A19B870008A0ED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		277052CA1A19B870008A0ED4 /* BCFileListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCFileListVC.h; sourceTree = "<group>"; };
-		277052CB1A19B870008A0ED4 /* BCFileListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCFileListVC.m; sourceTree = "<group>"; };
-		277052CC1A19B870008A0ED4 /* BCFileListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BCFileListVC.xib; sourceTree = "<group>"; };
-		277052CD1A19B870008A0ED4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		277052CE1A19B870008A0ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		277052CF1A19B870008A0ED4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		277052D01A19B870008A0ED4 /* ShareFile.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ShareFile.xcodeproj; sourceTree = "<group>"; };
-		277052D51A19B870008A0ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		277052D61A19B870008A0ED4 /* ShareFileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareFileTests.m; sourceTree = "<group>"; };
 		277052E21A19B892008A0ED4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		8443E99619F8D14600BC73BB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		8443EAB419F8D3CA00BC73BB /* BCPlistReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPlistReader.h; sourceTree = "<group>"; };
@@ -227,64 +160,10 @@
 		2770528F1A19B870008A0ED4 /* CloudFS-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				277052901A19B870008A0ED4 /* .gitignore */,
-				277052911A19B870008A0ED4 /* BitcasaSDK */,
 				277052BB1A19B870008A0ED4 /* BitcasaSDK.xcodeproj */,
-				277052BE1A19B870008A0ED4 /* README.md */,
-				277052BF1A19B870008A0ED4 /* Share.h */,
-				277052C01A19B870008A0ED4 /* Share.m */,
-				277052C11A19B870008A0ED4 /* ShareFile */,
 			);
 			name = "CloudFS-iOS";
 			path = "Libraries/CloudFS-iOS";
-			sourceTree = "<group>";
-		};
-		277052911A19B870008A0ED4 /* BitcasaSDK */ = {
-			isa = PBXGroup;
-			children = (
-				277052921A19B870008A0ED4 /* Account.h */,
-				277052931A19B870008A0ED4 /* Account.m */,
-				277052941A19B870008A0ED4 /* Audio.h */,
-				277052951A19B870008A0ED4 /* Audio.m */,
-				277052961A19B870008A0ED4 /* BCAssetStream.h */,
-				277052971A19B870008A0ED4 /* BCAssetStream.m */,
-				277052981A19B870008A0ED4 /* BCInputStream.h */,
-				277052991A19B870008A0ED4 /* BCInputStream.m */,
-				2770529A1A19B870008A0ED4 /* BitcasaAPI.h */,
-				2770529B1A19B870008A0ED4 /* BitcasaAPI.m */,
-				2770529C1A19B870008A0ED4 /* BitcasaSDK-Prefix.pch */,
-				2770529D1A19B870008A0ED4 /* Container.h */,
-				2770529E1A19B870008A0ED4 /* Container.m */,
-				2770529F1A19B870008A0ED4 /* Credentials.h */,
-				277052A01A19B870008A0ED4 /* Credentials.m */,
-				277052A11A19B870008A0ED4 /* Document.h */,
-				277052A21A19B870008A0ED4 /* Document.m */,
-				277052A31A19B870008A0ED4 /* File.h */,
-				277052A41A19B870008A0ED4 /* File.m */,
-				277052A51A19B870008A0ED4 /* Filesystem.h */,
-				277052A61A19B870008A0ED4 /* Filesystem.m */,
-				277052A71A19B870008A0ED4 /* Folder.h */,
-				277052A81A19B870008A0ED4 /* Folder.m */,
-				277052A91A19B870008A0ED4 /* Item.h */,
-				277052AA1A19B870008A0ED4 /* Item.m */,
-				277052AB1A19B870008A0ED4 /* NSMutableDictionary+API.h */,
-				277052AC1A19B870008A0ED4 /* NSMutableDictionary+API.m */,
-				277052AD1A19B870008A0ED4 /* NSString+API.h */,
-				277052AE1A19B870008A0ED4 /* NSString+API.m */,
-				277052AF1A19B870008A0ED4 /* Photo.h */,
-				277052B01A19B870008A0ED4 /* Photo.m */,
-				277052B11A19B870008A0ED4 /* Session.h */,
-				277052B21A19B870008A0ED4 /* Session.m */,
-				277052B31A19B870008A0ED4 /* Share.h */,
-				277052B41A19B870008A0ED4 /* Share.m */,
-				277052B51A19B870008A0ED4 /* TransferManager.h */,
-				277052B61A19B870008A0ED4 /* TransferManager.m */,
-				277052B71A19B870008A0ED4 /* User.h */,
-				277052B81A19B870008A0ED4 /* User.m */,
-				277052B91A19B870008A0ED4 /* Video.h */,
-				277052BA1A19B870008A0ED4 /* Video.m */,
-			);
-			path = BitcasaSDK;
 			sourceTree = "<group>";
 		};
 		277052BC1A19B870008A0ED4 /* Products */ = {
@@ -293,53 +172,6 @@
 				277052DA1A19B870008A0ED4 /* libBitcasaSDK.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		277052C11A19B870008A0ED4 /* ShareFile */ = {
-			isa = PBXGroup;
-			children = (
-				277052C21A19B870008A0ED4 /* ShareFile */,
-				277052D01A19B870008A0ED4 /* ShareFile.xcodeproj */,
-				277052D41A19B870008A0ED4 /* ShareFileTests */,
-			);
-			path = ShareFile;
-			sourceTree = "<group>";
-		};
-		277052C21A19B870008A0ED4 /* ShareFile */ = {
-			isa = PBXGroup;
-			children = (
-				277052C31A19B870008A0ED4 /* AppDelegate.h */,
-				277052C41A19B870008A0ED4 /* AppDelegate.m */,
-				277052C51A19B870008A0ED4 /* AuthVC.h */,
-				277052C61A19B870008A0ED4 /* AuthVC.m */,
-				277052C71A19B870008A0ED4 /* AuthVC.xib */,
-				277052C81A19B870008A0ED4 /* LaunchScreen.xib */,
-				277052CA1A19B870008A0ED4 /* BCFileListVC.h */,
-				277052CB1A19B870008A0ED4 /* BCFileListVC.m */,
-				277052CC1A19B870008A0ED4 /* BCFileListVC.xib */,
-				277052CD1A19B870008A0ED4 /* Images.xcassets */,
-				277052CE1A19B870008A0ED4 /* Info.plist */,
-				277052CF1A19B870008A0ED4 /* main.m */,
-			);
-			path = ShareFile;
-			sourceTree = "<group>";
-		};
-		277052D11A19B870008A0ED4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				277052DE1A19B870008A0ED4 /* ShareFile.app */,
-				277052E01A19B870008A0ED4 /* ShareFileTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		277052D41A19B870008A0ED4 /* ShareFileTests */ = {
-			isa = PBXGroup;
-			children = (
-				277052D51A19B870008A0ED4 /* Info.plist */,
-				277052D61A19B870008A0ED4 /* ShareFileTests.m */,
-			);
-			path = ShareFileTests;
 			sourceTree = "<group>";
 		};
 		8443E99519F8CF1A00BC73BB /* Libraries */ = {
@@ -516,6 +348,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F3904B4B1A38604D00E32E28 /* PBXTargetDependency */,
 			);
 			name = PhotoShare;
 			productName = PhotoShare;
@@ -550,7 +383,6 @@
 				TargetAttributes = {
 					849D9C4319F7C41700BE600A = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = MSFPXEWALH;
 					};
 					849D9C5C19F7C41700BE600A = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -574,10 +406,6 @@
 					ProductGroup = 277052BC1A19B870008A0ED4 /* Products */;
 					ProjectRef = 277052BB1A19B870008A0ED4 /* BitcasaSDK.xcodeproj */;
 				},
-				{
-					ProductGroup = 277052D11A19B870008A0ED4 /* Products */;
-					ProjectRef = 277052D01A19B870008A0ED4 /* ShareFile.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -593,20 +421,6 @@
 			fileType = archive.ar;
 			path = libBitcasaSDK.a;
 			remoteRef = 277052D91A19B870008A0ED4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		277052DE1A19B870008A0ED4 /* ShareFile.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = ShareFile.app;
-			remoteRef = 277052DD1A19B870008A0ED4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		277052E01A19B870008A0ED4 /* ShareFileTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ShareFileTests.xctest;
-			remoteRef = 277052DF1A19B870008A0ED4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -684,17 +498,14 @@
 			target = 849D9C4319F7C41700BE600A /* PhotoShare */;
 			targetProxy = 849D9C5E19F7C41800BE600A /* PBXContainerItemProxy */;
 		};
+		F3904B4B1A38604D00E32E28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BitcasaSDK;
+			targetProxy = F3904B4A1A38604D00E32E28 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		277052C81A19B870008A0ED4 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				277052C91A19B870008A0ED4 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 		849D9C5619F7C41700BE600A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -738,8 +549,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chamindu Munasinghe (U685Q696PA)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chamindu Munasinghe (U685Q696PA)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -787,6 +598,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
