@@ -11,7 +11,7 @@ This implementation of the PhotoShare app has been done using the [CloudFS iOS](
 First you need to clone the *PhotoShare-iOS* project files to your workspace:
 
     $ cd /path/to/your/workspace
-    $ git clone git@github.com:bitcasa/PhotoShare-iOS.git projectname  
+    $ git clone https://github.com/bitcasa/PhotoShare-iOS.git projectname  
     $ cd projectname
 
 ### 2. Requirements
@@ -49,5 +49,3 @@ More information on these variable and account creation can be found in our Phot
 
 ### 4. Start development
 Once all these steps are carried out you will be able to start tweaking and changing the app to discover the posibilities provided by the CloudFS SDK and iOS.
-
-
