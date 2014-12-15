@@ -72,6 +72,10 @@ static NSString *const usernameKey = @"Username Key";
         [_userAuthRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         [_userAuthRequest setValue:@"application/json" forHTTPHeaderField:@"Accept"];
         _userAuthHttpBody = [NSMutableDictionary dictionary];
+        
+        _userAccessToken = [[NSUserDefaults standardUserDefaults] stringForKey:userAccessTokenKey];
+        _appAccessToken = [[NSUserDefaults standardUserDefaults] stringForKey:appAccessTokenKey];
+        _username = [[NSUserDefaults standardUserDefaults] stringForKey:usernameKey];
     }
     
     return self;

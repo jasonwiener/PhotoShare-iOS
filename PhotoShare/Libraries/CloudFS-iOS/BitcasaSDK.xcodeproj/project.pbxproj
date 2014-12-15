@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		77354CF319C7DD8B006F750D /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 77354CF619C7DD8B006F750D /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				77354D0819C7E126006F750D /* MultiPlatform Build */,
+			);
+			dependencies = (
+				77354CF819C7DD9A006F750D /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		77062ECF19E8CB6300186334 /* BCAssetStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 77062ECE19E8CB6300186334 /* BCAssetStream.m */; };
+		77354CFA19C7E0E2006F750D /* Folder.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB37B19A69D2800D4BE80 /* Folder.h */; };
+		77354CFB19C7E0E2006F750D /* Video.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB37819A69D2800D4BE80 /* Video.h */; };
+		77354CFC19C7E0E2006F750D /* Item.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB37519A69D2800D4BE80 /* Item.h */; };
+		77354CFD19C7E0E2006F750D /* Container.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB37219A69D2800D4BE80 /* Container.h */; };
+		77354CFE19C7E0E2006F750D /* Photo.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB36F19A69D2800D4BE80 /* Photo.h */; };
+		77354CFF19C7E0E2006F750D /* File.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB36C19A69D2800D4BE80 /* File.h */; };
+		77354D0019C7E0E2006F750D /* Document.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB36919A69D2800D4BE80 /* Document.h */; };
+		77354D0119C7E0E2006F750D /* Audio.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB36619A69D2800D4BE80 /* Audio.h */; };
+		77354D0219C7E0E2006F750D /* User.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB37E19A69E0200D4BE80 /* User.h */; };
+		77354D0319C7E0E2006F750D /* Account.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB38119A69F5300D4BE80 /* Account.h */; };
+		77354D0419C7E0E2006F750D /* Session.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB38419A6A01A00D4BE80 /* Session.h */; };
+		77354D0519C7E0E2006F750D /* Filesystem.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB38719A6A8B600D4BE80 /* Filesystem.h */; };
+		77354D0619C7E0E2006F750D /* BitcasaAPI.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB38B19A6C95100D4BE80 /* BitcasaAPI.h */; };
+		77354D0719C7E0E2006F750D /* TransferManager.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77FA748019C28CFA00E84C23 /* TransferManager.h */; };
+		77354D0B19C7E2AD006F750D /* BCInputStream.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77FA748319C3B1D600E84C23 /* BCInputStream.h */; };
+		77354D1019C7E837006F750D /* NSString+API.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 77BEB38E19A6CA2C00D4BE80 /* NSString+API.h */; };
+		77354D1119C7E841006F750D /* Credentials.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 776A386E19A7A2F200E64737 /* Credentials.h */; };
+		77616EB319BFCFD3002C35E6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77616EB119BFCF69002C35E6 /* CoreData.framework */; };
+		776A387019A7A2F200E64737 /* Credentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 776A386F19A7A2F200E64737 /* Credentials.m */; };
+		77BEB33519A68F5C00D4BE80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BEB33419A68F5C00D4BE80 /* Foundation.framework */; };
+		77BEB36819A69D2800D4BE80 /* Audio.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB36719A69D2800D4BE80 /* Audio.m */; };
+		77BEB36B19A69D2800D4BE80 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB36A19A69D2800D4BE80 /* Document.m */; };
+		77BEB36E19A69D2800D4BE80 /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB36D19A69D2800D4BE80 /* File.m */; };
+		77BEB37119A69D2800D4BE80 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB37019A69D2800D4BE80 /* Photo.m */; };
+		77BEB37419A69D2800D4BE80 /* Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB37319A69D2800D4BE80 /* Container.m */; };
+		77BEB37719A69D2800D4BE80 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB37619A69D2800D4BE80 /* Item.m */; };
+		77BEB37A19A69D2800D4BE80 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB37919A69D2800D4BE80 /* Video.m */; };
+		77BEB37D19A69D2800D4BE80 /* Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB37C19A69D2800D4BE80 /* Folder.m */; };
+		77BEB38019A69E0200D4BE80 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB37F19A69E0200D4BE80 /* User.m */; };
+		77BEB38319A69F5300D4BE80 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB38219A69F5300D4BE80 /* Account.m */; };
+		77BEB38619A6A01A00D4BE80 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB38519A6A01A00D4BE80 /* Session.m */; };
+		77BEB38919A6A8B600D4BE80 /* Filesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB38819A6A8B600D4BE80 /* Filesystem.m */; };
+		77BEB38D19A6C95100D4BE80 /* BitcasaAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB38C19A6C95100D4BE80 /* BitcasaAPI.m */; };
+		77BEB39019A6CA2C00D4BE80 /* NSString+API.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BEB38F19A6CA2C00D4BE80 /* NSString+API.m */; };
+		77FA748219C28CFA00E84C23 /* TransferManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FA748119C28CFA00E84C23 /* TransferManager.m */; };
+		77FA748519C3B1D600E84C23 /* BCInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FA748419C3B1D600E84C23 /* BCInputStream.m */; };
+		BD987CB919FEF2C300BD1720 /* NSMutableDictionary+API.m in Sources */ = {isa = PBXBuildFile; fileRef = BD987CB819FEF2C300BD1720 /* NSMutableDictionary+API.m */; };
+		BDC562A119F03FB300D6481C /* Share.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC562A019F03FB300D6481C /* Share.m */; };
+		BDFF80A31A01B7C700F4667E /* Share.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BDC5629F19F03FB300D6481C /* Share.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77354CF719C7DD9A006F750D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77BEB32919A68F5B00D4BE80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77BEB33019A68F5C00D4BE80;
+			remoteInfo = BitcasaSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77BEB32F19A68F5C00D4BE80 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				BDFF80A31A01B7C700F4667E /* Share.h in Copy Files */,
+				77354D1119C7E841006F750D /* Credentials.h in Copy Files */,
+				77354D1019C7E837006F750D /* NSString+API.h in Copy Files */,
+				77354D0B19C7E2AD006F750D /* BCInputStream.h in Copy Files */,
+				77354CFA19C7E0E2006F750D /* Folder.h in Copy Files */,
+				77354CFB19C7E0E2006F750D /* Video.h in Copy Files */,
+				77354CFC19C7E0E2006F750D /* Item.h in Copy Files */,
+				77354CFD19C7E0E2006F750D /* Container.h in Copy Files */,
+				77354CFE19C7E0E2006F750D /* Photo.h in Copy Files */,
+				77354CFF19C7E0E2006F750D /* File.h in Copy Files */,
+				77354D0019C7E0E2006F750D /* Document.h in Copy Files */,
+				77354D0119C7E0E2006F750D /* Audio.h in Copy Files */,
+				77354D0219C7E0E2006F750D /* User.h in Copy Files */,
+				77354D0319C7E0E2006F750D /* Account.h in Copy Files */,
+				77354D0419C7E0E2006F750D /* Session.h in Copy Files */,
+				77354D0519C7E0E2006F750D /* Filesystem.h in Copy Files */,
+				77354D0619C7E0E2006F750D /* BitcasaAPI.h in Copy Files */,
+				77354D0719C7E0E2006F750D /* TransferManager.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		77062ECD19E8CB6300186334 /* BCAssetStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAssetStream.h; sourceTree = "<group>"; };
+		77062ECE19E8CB6300186334 /* BCAssetStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCAssetStream.m; sourceTree = "<group>"; };
+		77616EB119BFCF69002C35E6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		77616EB519BFD001002C35E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		776A386E19A7A2F200E64737 /* Credentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
+		776A386F19A7A2F200E64737 /* Credentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Credentials.m; sourceTree = "<group>"; };
+		77BEB33119A68F5C00D4BE80 /* libBitcasaSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBitcasaSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		77BEB33419A68F5C00D4BE80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		77BEB33819A68F5C00D4BE80 /* BitcasaSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BitcasaSDK-Prefix.pch"; sourceTree = "<group>"; };
+		77BEB34219A68F5C00D4BE80 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		77BEB36619A69D2800D4BE80 /* Audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
+		77BEB36719A69D2800D4BE80 /* Audio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Audio.m; sourceTree = "<group>"; };
+		77BEB36919A69D2800D4BE80 /* Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		77BEB36A19A69D2800D4BE80 /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		77BEB36C19A69D2800D4BE80 /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
+		77BEB36D19A69D2800D4BE80 /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
+		77BEB36F19A69D2800D4BE80 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		77BEB37019A69D2800D4BE80 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		77BEB37219A69D2800D4BE80 /* Container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
+		77BEB37319A69D2800D4BE80 /* Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
+		77BEB37519A69D2800D4BE80 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		77BEB37619A69D2800D4BE80 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		77BEB37819A69D2800D4BE80 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		77BEB37919A69D2800D4BE80 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		77BEB37B19A69D2800D4BE80 /* Folder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Folder.h; sourceTree = "<group>"; };
+		77BEB37C19A69D2800D4BE80 /* Folder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Folder.m; sourceTree = "<group>"; };
+		77BEB37E19A69E0200D4BE80 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		77BEB37F19A69E0200D4BE80 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		77BEB38119A69F5300D4BE80 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		77BEB38219A69F5300D4BE80 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		77BEB38419A6A01A00D4BE80 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		77BEB38519A6A01A00D4BE80 /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		77BEB38719A6A8B600D4BE80 /* Filesystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filesystem.h; sourceTree = "<group>"; };
+		77BEB38819A6A8B600D4BE80 /* Filesystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filesystem.m; sourceTree = "<group>"; };
+		77BEB38B19A6C95100D4BE80 /* BitcasaAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitcasaAPI.h; sourceTree = "<group>"; };
+		77BEB38C19A6C95100D4BE80 /* BitcasaAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitcasaAPI.m; sourceTree = "<group>"; };
+		77BEB38E19A6CA2C00D4BE80 /* NSString+API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+API.h"; sourceTree = "<group>"; };
+		77BEB38F19A6CA2C00D4BE80 /* NSString+API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+API.m"; sourceTree = "<group>"; };
+		77FA748019C28CFA00E84C23 /* TransferManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferManager.h; sourceTree = "<group>"; };
+		77FA748119C28CFA00E84C23 /* TransferManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferManager.m; sourceTree = "<group>"; };
+		77FA748319C3B1D600E84C23 /* BCInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCInputStream.h; sourceTree = "<group>"; };
+		77FA748419C3B1D600E84C23 /* BCInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCInputStream.m; sourceTree = "<group>"; };
+		BD987CB719FEF2C300BD1720 /* NSMutableDictionary+API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+API.h"; sourceTree = "<group>"; };
+		BD987CB819FEF2C300BD1720 /* NSMutableDictionary+API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+API.m"; sourceTree = "<group>"; };
+		BDC5629F19F03FB300D6481C /* Share.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Share.h; sourceTree = "<group>"; };
+		BDC562A019F03FB300D6481C /* Share.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Share.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77BEB32E19A68F5C00D4BE80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77616EB319BFCFD3002C35E6 /* CoreData.framework in Frameworks */,
+				77BEB33519A68F5C00D4BE80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77BEB32819A68F5B00D4BE80 = {
+			isa = PBXGroup;
+			children = (
+				77BEB33619A68F5C00D4BE80 /* BitcasaSDK */,
+				77BEB33319A68F5C00D4BE80 /* Frameworks */,
+				77BEB33219A68F5C00D4BE80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77BEB33219A68F5C00D4BE80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77BEB33119A68F5C00D4BE80 /* libBitcasaSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77BEB33319A68F5C00D4BE80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77616EB519BFD001002C35E6 /* UIKit.framework */,
+				77616EB119BFCF69002C35E6 /* CoreData.framework */,
+				77BEB33419A68F5C00D4BE80 /* Foundation.framework */,
+				77BEB34219A68F5C00D4BE80 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77BEB33619A68F5C00D4BE80 /* BitcasaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				77BEB33719A68F5C00D4BE80 /* Supporting Files */,
+				77BEB37B19A69D2800D4BE80 /* Folder.h */,
+				77BEB37C19A69D2800D4BE80 /* Folder.m */,
+				77BEB37819A69D2800D4BE80 /* Video.h */,
+				77BEB37919A69D2800D4BE80 /* Video.m */,
+				77BEB37519A69D2800D4BE80 /* Item.h */,
+				77BEB37619A69D2800D4BE80 /* Item.m */,
+				77BEB37219A69D2800D4BE80 /* Container.h */,
+				77BEB37319A69D2800D4BE80 /* Container.m */,
+				77BEB36F19A69D2800D4BE80 /* Photo.h */,
+				77BEB37019A69D2800D4BE80 /* Photo.m */,
+				77BEB36C19A69D2800D4BE80 /* File.h */,
+				77BEB36D19A69D2800D4BE80 /* File.m */,
+				77BEB36919A69D2800D4BE80 /* Document.h */,
+				77BEB36A19A69D2800D4BE80 /* Document.m */,
+				77BEB36619A69D2800D4BE80 /* Audio.h */,
+				77BEB36719A69D2800D4BE80 /* Audio.m */,
+				77BEB37E19A69E0200D4BE80 /* User.h */,
+				77BEB37F19A69E0200D4BE80 /* User.m */,
+				77BEB38119A69F5300D4BE80 /* Account.h */,
+				77BEB38219A69F5300D4BE80 /* Account.m */,
+				77BEB38419A6A01A00D4BE80 /* Session.h */,
+				77BEB38519A6A01A00D4BE80 /* Session.m */,
+				77BEB38719A6A8B600D4BE80 /* Filesystem.h */,
+				77BEB38819A6A8B600D4BE80 /* Filesystem.m */,
+				77BEB38B19A6C95100D4BE80 /* BitcasaAPI.h */,
+				77BEB38C19A6C95100D4BE80 /* BitcasaAPI.m */,
+				77062ECD19E8CB6300186334 /* BCAssetStream.h */,
+				77062ECE19E8CB6300186334 /* BCAssetStream.m */,
+				77FA748019C28CFA00E84C23 /* TransferManager.h */,
+				77FA748119C28CFA00E84C23 /* TransferManager.m */,
+				77FA748319C3B1D600E84C23 /* BCInputStream.h */,
+				77FA748419C3B1D600E84C23 /* BCInputStream.m */,
+				77BEB38E19A6CA2C00D4BE80 /* NSString+API.h */,
+				77BEB38F19A6CA2C00D4BE80 /* NSString+API.m */,
+				776A386E19A7A2F200E64737 /* Credentials.h */,
+				776A386F19A7A2F200E64737 /* Credentials.m */,
+				BDC5629F19F03FB300D6481C /* Share.h */,
+				BDC562A019F03FB300D6481C /* Share.m */,
+				BD987CB719FEF2C300BD1720 /* NSMutableDictionary+API.h */,
+				BD987CB819FEF2C300BD1720 /* NSMutableDictionary+API.m */,
+			);
+			path = BitcasaSDK;
+			sourceTree = "<group>";
+		};
+		77BEB33719A68F5C00D4BE80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77BEB33819A68F5C00D4BE80 /* BitcasaSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77BEB33019A68F5C00D4BE80 /* BitcasaSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77BEB35419A68F5C00D4BE80 /* Build configuration list for PBXNativeTarget "BitcasaSDK" */;
+			buildPhases = (
+				77BEB32D19A68F5C00D4BE80 /* Sources */,
+				77BEB32E19A68F5C00D4BE80 /* Frameworks */,
+				77BEB32F19A68F5C00D4BE80 /* Copy Files */,
+				77354CF919C7DE84006F750D /* Build Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitcasaSDK;
+			productName = BitcasaSDK;
+			productReference = 77BEB33119A68F5C00D4BE80 /* libBitcasaSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77BEB32919A68F5B00D4BE80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Bitcasa;
+			};
+			buildConfigurationList = 77BEB32C19A68F5B00D4BE80 /* Build configuration list for PBXProject "BitcasaSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 77BEB32819A68F5B00D4BE80;
+			productRefGroup = 77BEB33219A68F5C00D4BE80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77BEB33019A68F5C00D4BE80 /* BitcasaSDK */,
+				77354CF319C7DD8B006F750D /* Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77354CF919C7DE84006F750D /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+		};
+		77354D0819C7E126006F750D /* MultiPlatform Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "MultiPlatform Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77BEB32D19A68F5C00D4BE80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BEB37719A69D2800D4BE80 /* Item.m in Sources */,
+				77BEB37119A69D2800D4BE80 /* Photo.m in Sources */,
+				77BEB38919A6A8B600D4BE80 /* Filesystem.m in Sources */,
+				77BEB36E19A69D2800D4BE80 /* File.m in Sources */,
+				77BEB38619A6A01A00D4BE80 /* Session.m in Sources */,
+				77BEB37A19A69D2800D4BE80 /* Video.m in Sources */,
+				77BEB39019A6CA2C00D4BE80 /* NSString+API.m in Sources */,
+				77062ECF19E8CB6300186334 /* BCAssetStream.m in Sources */,
+				77FA748519C3B1D600E84C23 /* BCInputStream.m in Sources */,
+				BDC562A119F03FB300D6481C /* Share.m in Sources */,
+				BD987CB919FEF2C300BD1720 /* NSMutableDictionary+API.m in Sources */,
+				77BEB38D19A6C95100D4BE80 /* BitcasaAPI.m in Sources */,
+				77BEB36B19A69D2800D4BE80 /* Document.m in Sources */,
+				776A387019A7A2F200E64737 /* Credentials.m in Sources */,
+				77BEB36819A69D2800D4BE80 /* Audio.m in Sources */,
+				77BEB38019A69E0200D4BE80 /* User.m in Sources */,
+				77FA748219C28CFA00E84C23 /* TransferManager.m in Sources */,
+				77BEB38319A69F5300D4BE80 /* Account.m in Sources */,
+				77BEB37419A69D2800D4BE80 /* Container.m in Sources */,
+				77BEB37D19A69D2800D4BE80 /* Folder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77354CF819C7DD9A006F750D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77BEB33019A68F5C00D4BE80 /* BitcasaSDK */;
+			targetProxy = 77354CF719C7DD9A006F750D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		77354CF419C7DD8B006F750D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77354CF519C7DD8B006F750D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		77BEB35219A68F5C00D4BE80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		77BEB35319A68F5C00D4BE80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77BEB35519A68F5C00D4BE80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BitcasaSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitcasaSDK/BitcasaSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		77BEB35619A68F5C00D4BE80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BitcasaSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitcasaSDK/BitcasaSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77354CF619C7DD8B006F750D /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77354CF419C7DD8B006F750D /* Debug */,
+				77354CF519C7DD8B006F750D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77BEB32C19A68F5B00D4BE80 /* Build configuration list for PBXProject "BitcasaSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77BEB35219A68F5C00D4BE80 /* Debug */,
+				77BEB35319A68F5C00D4BE80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77BEB35419A68F5C00D4BE80 /* Build configuration list for PBXNativeTarget "BitcasaSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77BEB35519A68F5C00D4BE80 /* Debug */,
+				77BEB35619A68F5C00D4BE80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77BEB32919A68F5B00D4BE80 /* Project object */;
+}
