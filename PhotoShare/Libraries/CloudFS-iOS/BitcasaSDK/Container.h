@@ -10,6 +10,8 @@
 #import <CoreData/CoreData.h>
 #import "Item.h"
 
+@class Folder;
+
 extern NSString* const kAPIEndpointFolderAction;
 
 @interface Container : Item
@@ -17,6 +19,6 @@ extern NSString* const kAPIEndpointFolderAction;
 @property (nonatomic) int64_t itemCount;
 
 - (id)initRootContainer;
-- (void) createFolder:(NSString*)name completion:(void (^)(Container* newDir))completion;
+- (void) createFolder:(NSString*)name completion:(void (^)(Folder* newDir))completion;
 - (void) listItemsWithCompletion:(void (^)(NSArray* items))completion;
 @end

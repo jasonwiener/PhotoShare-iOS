@@ -13,7 +13,6 @@
 @implementation Item
 
 @synthesize url;
-@synthesize itemId;
 @synthesize parentId;
 @synthesize version;
 @synthesize name;

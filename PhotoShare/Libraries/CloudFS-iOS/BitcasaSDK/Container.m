@@ -25,7 +25,7 @@ NSString* const kAPIEndpointFolderAction = @"/folders";
 }
 
 #pragma mark - create folder
-- (void) createFolder:(NSString*)name completion:(void (^)(Container* newDir))completion
+- (void) createFolder:(NSString*)name completion:(void (^)(Folder* newDir))completion
 {
     [BitcasaAPI createFolderInContainer:self withName:name completion:^(NSDictionary* newContainerDict)
     {
