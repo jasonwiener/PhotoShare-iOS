@@ -78,7 +78,7 @@
     
     UITabBarItem *homeTabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:[UIImage imageNamed:@"TabBarHome"] tag:1];
     UITabBarItem *friendTabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:[UIImage imageNamed:@"TabBarFriends"] tag:3];
-    UITabBarItem *historyTabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:[UIImage imageNamed:@"TabBarHistry"] tag:4];
+    UITabBarItem *historyTabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:[UIImage imageNamed:@"TabBarHistory"] tag:4];
     
     [homeController setTabBarItem:homeTabBarItem];
     [friendsController setTabBarItem:friendTabBarItem];
